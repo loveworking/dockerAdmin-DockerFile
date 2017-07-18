@@ -5,4 +5,4 @@ RUN sed -i 's~dl-cdn.alpinelinux.org~mirrors.aliyun.com~' /etc/apk/repositories 
     && mkdir /run/nginx \
     && nginx
 CMD nginx && top
-ENTERPOINT []
+ENTRYPOINT []
