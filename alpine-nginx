@@ -1,0 +1,8 @@
+FROM hub.c.163.com/library/alpine:latest
+RUN sed -i 's~dl-cdn.alpinelinux.org~mirrors.aliyun.com~' /etc/apk/repositories \
+    && apk update \
+    && apk add nginx \
+    && mkdir /run/nginx \
+    && nginx
+CMD
+ENTERPOINT []
